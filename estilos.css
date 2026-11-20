@@ -18,15 +18,12 @@ body {
 }
 
 
-/* ENCABEZADO */
 
 header {
-    background: linear-gradient(135deg, #111b35, #172b4d);
+    background: linear-gradient(135deg, #2f457c, #223f71,#7654d6);
     border-bottom: 2px solid #00d9ff;
 }
 
-
-/* NAVEGACIÓN */
 
 nav {
     display: flex;
@@ -46,7 +43,6 @@ nav a {
 }
 
 
-/* PORTADA */
 
 .portada {
     text-align: center;
@@ -89,8 +85,6 @@ nav a {
 }
 
 
-/* SECCIONES */
-
 main {
     max-width: 1150px;
     margin: auto;
@@ -117,8 +111,6 @@ section h2 {
     color: #b8c7df;
 }
 
-
-/* TARJETAS */
 
 .descripcion {
     color: #b8c7df;
@@ -193,8 +185,6 @@ section h2 {
 }
 
 
-/* PIE DE PÁGINA */
-
 footer {
     background-color: #070b16;
     border-top: 1px solid #263653;
@@ -218,7 +208,6 @@ footer p {
     border-radius: 50%;
 }
 
-/* DISEÑO RESPONSIVE */
 
 @media (max-width: 600px) {
 
