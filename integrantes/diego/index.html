@@ -19,7 +19,6 @@
 
     <main>
 
-        <!-- IDENTIDAD CREATIVA -->
         <section>
             <h2>Sobre mí</h2>
 
@@ -52,38 +51,43 @@
             </ul>
         </section>
 
-        <!-- PROYECTOS CREATIVOS -->
         <section id="proyectos">
             <h2>Mis proyectos creativos</h2>
 
             <div class="proyectos">
 
                 <figure>
-                    <img src="imagenes/Afiche Concurso - Cordero.jpg"
-                        alt="Afiche publicitario diseñado por Diego Cordero">
+                    <img src="imagenes/FYTIX.png"
+                        alt="Aplicación de celular">
 
                     <figcaption>
-                        <h3>Afiche publicitario</h3>
-                        <p>Diseño gráfico y composición visual.</p>
+                        <h3>Aplicación Celular</h3>
+                        <p>Mediante el uso de figma diseñé una app de gimnasio.</p>
                         <p><strong>Técnica:</strong> Diseño digital.</p>
+                        <a href="https://www.figma.com/proto/N9PriPAQnSdeiTe1FQy1Mk/
+                        App-Gimnasio?node-id=442-1874&p=f&t=hsNg5yf0FMTd4294-0&scaling
+                        =scale-down&content-scaling=fixed&page-id=0%3A1&starting-point
+                        -node-id=442%3A1874">Conoce la APP</a>
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="imagenes/cafeteria-02.jpg"
+                    <img src="imagenes/Zhumir.png"
                         alt="Propuesta visual de una cafetería ficticia">
 
                     <figcaption>
-                        <h3>Identidad de cafetería</h3>
-                        <p>Conceptualización y diseño de una marca ficticia.</p>
+                        <h3>Rediseño UI / UX</h3>
+                        <p>Rediseño de una marca ya existente para generar más interaccón.</p>
                         <p><strong>Técnica:</strong> Diseño y creatividad visual.</p>
+                        <a href="https://www.figma.com/proto/8uWC5AntvGfKkvJ9iMbzlF/
+                        Web-Zhumir?node-id=2-3&starting-point-node-id=2%3A3">Conoce el Rediseño de Página</a>
+
                     </figcaption>
                 </figure>
 
             </div>
         </section>
 
-        <!-- EXPERIENCIA MULTIMEDIA -->
         <section id="multimedia">
             <h2>Mi experiencia multimedia</h2>
 
@@ -117,7 +121,6 @@
 
         </section>
 
-        <!-- FORMULARIO DEMOSTRATIVO -->
         <section id="contacto">
             <h2>Contáctame</h2>
 
@@ -126,7 +129,7 @@
                 Completa el siguiente formulario.
             </p>
 
-            <form onsubmit="return false;">
+            <form>
 
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre"
@@ -151,19 +154,29 @@
                     <option value="otro">Otro</option>
                 </select>
 
-                <p>Modalidad de colaboración:</p>
+                <fieldset>
 
-                <input type="radio" id="presencial"
-                    name="modalidad" value="presencial" required>
-                <label for="presencial">Presencial</label>
+                    <legend>Modalidad de colaboración:</legend>
 
-                <input type="radio" id="virtual"
-                    name="modalidad" value="virtual">
-                <label for="virtual">Virtual</label>
+                    <label>
+                        <input type="radio" id="presencial"
+                            name="modalidad" value="presencial" required>
+                        Presencial
+                    </label>
 
-                <input type="radio" id="ambas"
-                    name="modalidad" value="ambas">
-                <label for="ambas">Ambas</label>
+                    <label>
+                        <input type="radio" id="virtual"
+                            name="modalidad" value="virtual">
+                        Virtual
+                    </label>
+
+                    <label>
+                        <input type="radio" id="ambas"
+                            name="modalidad" value="ambas">
+                        Ambas
+                    </label>
+
+                </fieldset>
 
                 <label for="mensaje">Mensaje:</label>
 
@@ -188,22 +201,17 @@
 
     </main>
 
-    <!-- REGRESAR A LA LANDING PAGE -->
     <section class="volver-equipo">
         <a href="../../index.html">
-            Volver al equipo
+            Volver a la página principal
         </a>
     </section>
 
-    <!-- PIE DE PAGINA -->
     <footer>
         <h3>Diego Cordero</h3>
         <p>Estudiante de Diseño Multimedia</p>
         <p>Creatividad, diseño y tecnología.</p>
 
-        <p class="copyright">
-            © 2026 Diego Cordero. Todos los derechos reservados.
-        </p>
     </footer>
 
 </body>
