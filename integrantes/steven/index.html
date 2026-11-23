@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Steven Placencia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080c09;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #101b13;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 2px solid #28e66b;
+        }
+
+        header h1 {
+            color: #28e66b;
+            font-size: 32px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        nav a:hover {
+            color: #28e66b;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #28e66b;
+            margin-bottom: 20px;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 80px 10%;
+            background: #101b13;
+        }
+
+        .inicio h2 {
+            font-size: 35px;
+        }
+
+        .perfil {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #28e66b;
+            margin-bottom: 20px;
+        }
+
+        .proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .proyecto {
+            background: #142019;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #245c36;
+        }
+
+        .proyecto img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .proyecto h3 {
+            color: #28e66b;
+            margin-bottom: 8px;
+        }
+
+        audio, video {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 15px;
+        }
+
+        form {
+            background: #142019;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 550px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #28e66b;
+            border-radius: 6px;
+            background: #080c09;
+            color: white;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        button {
+            background: #28e66b;
+            color: #080c09;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #19bd53;
+        }
+
+        footer {
+            text-align: center;
+            background: #101b13;
+            padding: 20px;
+            color: #28e66b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>STEVEN PLACENCIA</h1>
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Multimedia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="inicio">
+    <h2>Bienvenido a mi portafolio</h2>
+    <p>Creatividad, diseño e imaginación.</p>
+</section>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+
+    <img src="imagenes/perfil.jpg" alt="Mi foto"
+    class="perfil">
+
+    <p>
+        Hola, soy Steven Placencia, estudiante de Diseño
+        Multimedia. Me gusta la edición de imágenes, el diseño
+        gráfico y crear composiciones visuales. Una de las
+        herramientas que más me interesa utilizar es Photoshop,
+        porque me permite expresar mi creatividad.
+    </p>
+</section>
+
+<section id="proyectos">
+    <h2>Mis proyectos en Photoshop</h2>
+
+    <div class="proyectos">
+
+        <div class="proyecto">
+            <img src="imagenes/photoshop1.jpg"
+            alt="Retoque fotográfico">
+
+            <h3>Retoque fotográfico</h3>
+
+            <p>
+                Este proyecto consiste en editar fotografías,
+                mejorar sus colores, iluminación y detalles
+                para conseguir un mejor resultado visual.
+            </p>
+
+            <p><strong>Herramienta:</strong> Adobe Photoshop.</p>
+        </div>
+
+        <div class="proyecto">
+            <img src="imagenes/photoshop2.jpg"
+            alt="Diseño de afiche">
+
+            <h3>Diseño creativo</h3>
+
+            <p>
+                Es una composición gráfica donde se utilizan
+                imágenes, textos, colores y efectos para
+                crear un diseño llamativo.
+            </p>
+
+            <p><strong>Herramienta:</strong> Adobe Photoshop.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="experiencia">
+    <h2>Mi experiencia multimedia</h2>
+
+    <h3>Audio creativo</h3>
+    <p>
+        Este audio representa mi interés por la creatividad
+        y la producción de contenido multimedia.
+    </p>
+
+    <audio controls>
+        <source src="audio/muestra.mp3" type="audio/mpeg">
+        Tu navegador no permite reproducir este audio.
+    </audio>
+
+    <br><br>
+
+    <h3>Video creativo</h3>
+    <p>
+        Este video muestra mi interés por la edición
+        y creación de contenido audiovisual.
+    </p>
+
+    <video controls width="500">
+        <source src="video/muestra.mp4" type="video/mp4">
+        Tu navegador no permite reproducir este video.
+    </video>
+</section>
+
+<section id="contacto">
+    <h2>Formulario de contacto</h2>
+
+    <p>
+        Si tienes una idea o proyecto, puedes completar
+        este formulario.
+    </p>
+
+    <form onsubmit="alert('Formulario de demostración. No se guardaron ni enviaron datos.'); return false;">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"
+        placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo"
+        placeholder="ejemplo@gmail.com" required>
+
+        <label for="interes">¿Qué proyecto te interesa?</label>
+        <select id="interes" required>
+            <option value="">Selecciona una opción</option>
+            <option>Retoque fotográfico</option>
+            <option>Diseño de afiches</option>
+            <option>Edición de imágenes</option>
+        </select>
+
+        <label>¿Te gustaría trabajar conmigo?</label>
+
+        <input type="radio" name="colaboracion"
+        value="Si" required> Sí
+
+        <input type="radio" name="colaboracion"
+        value="No"> No
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="4"
+        placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <p>
+        Nota: Este formulario es demostrativo.
+        No guarda ni envía información.
+        Utiliza datos ficticios para probarlo.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Steven Placencia | Portafolio Multimedia</p>
+</footer>
+
+</body>
+</html>

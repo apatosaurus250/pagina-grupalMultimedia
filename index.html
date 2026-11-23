@@ -25,9 +25,9 @@
             <h1>Tu imaginación, nuestra creación</h1>
 
             <p>
-                Somos un equipo multidisciplinario especializado en programación, 
-                producción audiovisual, animación 3D e ilustración, que combina creatividad, 
-                innovación y tecnología para desarrollar experiencias digitales y contenidos 
+                Somos un equipo multidisciplinario especializado en programación,
+                producción audiovisual, animación 3D e ilustración, que combina creatividad,
+                innovación y tecnología para desarrollar experiencias digitales y contenidos
                 visuales de alto impacto.
             </p>
 
@@ -40,85 +40,125 @@
 
     <main>
 
+        <!-- CARRUSEL DE INFORMACIÓN -->
+
         <section class="presentacion">
 
-            <p class="etiqueta">QUIÉNES SOMOS</p>
+            <div class="container">
 
-            <h1>Creatividad en conjunto</h1>
+                <p class="etiqueta">CONÓCENOS</p>
 
-            <p>
-                Somos un equipo multidisciplinario especializado en programación, 
-                producción audiovisual, animación 3D e ilustración, que combina creatividad, 
-                innovación y tecnología para desarrollar experiencias digitales y contenidos 
-                visuales de alto impacto.
-            </p>
+                <h2>Creatividad en conjunto</h2>
 
-            <p>Nos caracteriza el trabajo colaborativo, la innovación constante y la pasión 
-                por crear. Unimos el arte, la tecnología y la comunicación para ofrecer 
-                soluciones integrales, adaptadas a las necesidades de cada proyecto.
-            </p>
+                <p>Descubre quiénes somos y los servicios que ofrecemos.</p>
 
-            <p>
-                No solo desarrollamos proyectos: creamos experiencias, contamos 
-                historias y convertimos ideas en realidad.
-            </p>
+                <div id="myCarousel" class="carousel">
 
-            <h2>¿A quiénes queremos llegar?</h2>
-            
-            <p>
-                Nuestros servicios están dirigidos a empresas, instituciones, 
-                emprendimientos, marcas, agencias y profesionales que buscan soluciones creativas, 
-                tecnológicas y audiovisuales para fortalecer su comunicación, potenciar su imagen
-                y destacar en el entorno digital.
+                    <!-- Indicadores -->
 
-            </p>
+                    <ol class="carousel-indicators">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
 
-            <h2>Nuestros servicios</h2>
-            <h3>1. Desarrollo tecnológico y soluciones digitales</h3>
+                    <!-- Diapositivas -->
 
-            <p>
-                Diseñamos y desarrollamos soluciones digitales a medida, integrando programación, 
-                diseño y tecnología para crear páginas web, aplicaciones, plataformas interactivas 
-                y experiencias digitales que responden a las necesidades de cada cliente.
-            </p>
+                    <div class="carousel-inner">
 
-            <h3>2. Producción audiovisual y animación 3D</h3>
+                        <div class="item active">
+                            <h2>¿Quiénes somos?</h2>
 
-            <p>
-                Creamos contenidos audiovisuales profesionales y experiencias visuales mediante grabación,
-                edición, postproducción, modelado y animación 3D. Transformamos ideas en historias visuales
-                atractivas, dinámicas e impactantes para marcas, empresas e instituciones.
-            </p>
+                            <p>
+                                Somos un equipo multidisciplinario especializado en programación,
+                                producción audiovisual, animación 3D e ilustración.
+                            </p>
 
-            <h3>3. Diseño creativo e ilustración</h3>
+                            <p>
+                                Combinamos creatividad, innovación y tecnología para desarrollar
+                                experiencias digitales y contenidos visuales de alto impacto.
+                            </p>
+                        </div>
 
-            <p>
-                Desarrollamos propuestas gráficas e ilustraciones originales que comunican ideas, transmiten 
-                emociones y fortalecen la identidad visual de cada proyecto. Combinamos creatividad, arte y 
-                diseño para generar piezas visuales únicas y memorables.
 
-            </p>
+                        <div class="item">
+                            <h2>¿A quiénes queremos llegar?</h2>
 
-             <h2>¿Qué ofrecemos?</h2>
+                            <p>
+                                Nuestros servicios están dirigidos a empresas, instituciones,
+                                emprendimientos, marcas, agencias y profesionales que buscan
+                                soluciones creativas, tecnológicas y audiovisuales.
+                            </p>
 
-            <p>
-                Soluciones integrales
-            </p>
-            <p>
-                Creatividad e innovación
-            </p>
-            <p>
-                Desarrollo personalizado
-            </p>
-            <p>
-                Calidad profesional
-            </p>
-            <p>
-                Comunicación con impacto
-            </p>
-    
+                            <p>
+                                Buscamos fortalecer la comunicación y potenciar la imagen
+                                de cada proyecto.
+                            </p>
+                        </div>
+
+
+                        <div class="item">
+                            <h2>Desarrollo tecnológico y soluciones digitales</h2>
+
+                            <p>
+                                Diseñamos y desarrollamos páginas web, aplicaciones,
+                                plataformas interactivas y experiencias digitales a medida.
+                            </p>
+
+                            <p>
+                                Integramos programación, diseño y tecnología para responder
+                                a las necesidades de cada cliente.
+                            </p>
+                        </div>
+
+
+                        <div class="item">
+                            <h2>Producción audiovisual y animación 3D</h2>
+
+                            <p>
+                                Creamos contenidos audiovisuales mediante grabación,
+                                edición, postproducción, modelado y animación 3D.
+                            </p>
+
+                            <p>
+                                Transformamos ideas en historias visuales atractivas,
+                                dinámicas e impactantes.
+                            </p>
+                        </div>
+
+
+                        <div class="item">
+                            <h2>Diseño creativo e ilustración</h2>
+
+                            <p>
+                                Desarrollamos propuestas gráficas e ilustraciones originales
+                                que comunican ideas y transmiten emociones.
+                            </p>
+
+                            <p>
+                                Combinamos creatividad, arte y diseño para generar
+                                piezas visuales únicas.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Flechas -->
+
+                    <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+
+                    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+
+                </div>
+
+            </div>
+
         </section>
 
+
+        <!-- SECCIÓN DEL EQUIPO -->
 
         <section class="equipo" id="equipo">
 
@@ -135,14 +175,12 @@
                 <article class="tarjeta">
 
                     <div class="foto">
-                    <img src="imagenes/diego.jpg" alt="Foto de Diego">
+                        <img src="imagenes/diego.jpg" alt="Foto de Diego">
                     </div>
 
                     <h3>Diego Cordero</h3>
 
-                    <p>
-                        Diseño de Interfaces
-                    </p>
+                    <p>Diseño de Interfaces</p>
 
                     <a href="integrantes/diego/index.html">
                         Ver perfil
@@ -154,18 +192,16 @@
                 <article class="tarjeta">
 
                     <div class="foto">
-                    <img src="imagenes/alli.jpeg" alt="Foto de Allison">
+                        <img src="imagenes/alli.jpeg" alt="Foto de Allison">
                     </div>
 
                     <h3>Allison Chillogallo</h3>
 
-                    <p>
-                        Diseño Gráfico y Producción Audiovisual
-                    </p>
+                    <p>Diseño Gráfico y Producción Audiovisual</p>
 
-                    <span class="proximamente">
-                        Próximamente
-                    </span>
+                    <a href="integrantes/allison/index.html">
+                        Ver perfil
+                    </a>
 
                 </article>
 
@@ -173,18 +209,16 @@
                 <article class="tarjeta">
 
                     <div class="foto">
-                    <img src="imagenes/gaby.jpeg" alt="Foto de Gabriela">
+                        <img src="imagenes/gaby.jpeg" alt="Foto de Gabriela">
                     </div>
 
                     <h3>Gabriela Aleman</h3>
 
-                    <p>
-                        Ilustración Digital y Conceptual
-                    </p>
+                    <p>Ilustración Digital y Conceptual</p>
 
-                    <span class="proximamente">
-                        Próximamente
-                    </span>
+                    <a href="integrantes/gaby/index.html">
+                        Ver perfil
+                    </a>
 
                 </article>
 
@@ -192,18 +226,16 @@
                 <article class="tarjeta">
 
                     <div class="foto">
-                    <img src="imagenes/steven.jpeg" alt="Foto de Steven">
+                        <img src="imagenes/steven.jpeg" alt="Foto de Steven">
                     </div>
 
                     <h3>Steven Placencia</h3>
 
-                    <p>
-                        Animación 3D y creatividad
-                    </p>
+                    <p>Animación 3D y creatividad</p>
 
-                    <span class="proximamente">
-                        Próximamente
-                    </span>
+                    <a href="integrantes/steven/index.html">
+                        Ver perfil
+                    </a>
 
                 </article>
 
@@ -218,11 +250,20 @@
 
         <h2>CONTROL Z</h2>
 
-        <p>Diseño Multimedia · 2026</p>
-
+        <p>Diseño Multimedia · 2026 </p>
+        <p>Av. Remigio Crespo Toral y Av. Solano, Edificio Creativa, Oficina 302, Cuenca, Ecuador.</p>
+        <p>+593 98 765 4321</p>
+        <p>Facebook: Control Z Diseño Gráfico</p>
+        <p>Instagram: @controlzdesign.ec</p>
+        <p>LinkedIn: Control Z Creative Studio</p>
         <p>Cuatro ideas, una misma creatividad.</p>
 
     </footer>
+
+
+    <!-- Conexión con JavaScript -->
+
+    <script src="carrusel.js"></script>
 
 </body>
 </html>

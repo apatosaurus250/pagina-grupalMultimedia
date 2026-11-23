@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Allison</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Allison Chillogallo</h1>
+        <p>Producción Audiovisual · Diseño Gráfico · Edición · Creatividad</p>
+        <p>Tu imaginación, nuestra creación</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Sobre mí</h2>
+            <img src="imagenes/alli.jpeg"
+            alt="Fotografía de Allison Chillogallo">
+
+            <p>
+                Soy Allison Chillogallo, estudiante de 
+                <strong>Diseño Multimedia</strong>.
+                Me gusta expresar mi creatividad a través del 
+                diseño gráfico y la producción audiovisual.
+                Disfruto crear composiciones, experimentar con 
+                imágenes y colores, y dar vida a ideas mediante 
+                la edición de videos y la fotografía.
+            </p>
+
+            <p>
+                Me gusta experimentar con nuevas ideas, estilos 
+                y herramientas digitales para transformar mi 
+                creatividad en proyectos originales que comuniquen 
+                y sorprendan a mi público.
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Mis servicios</h2>
+            <ul>
+                <li>Fotografía</li>
+                <li>Edición de video</li>
+                <li>Identidad visual</li>
+                <li>Diseño publicitario</li>
+                <li>Community Manager</li>
+            </ul>
+        </section>
+
+        <section id="MisProyectos">
+            <h2>Mis proyectos creativos</h2>
+
+            <div class="proyectos">
+                <figure>
+                    <img src="imagenes/diseño 1.jpeg"
+                    alt="Proyeto de Diseño Gráfico">
+                    
+                    <figcaption>
+                        <h3>Proyeto de Diseño Gráfico</h3>
+                        <p>Composicion Visual</p>
+                        <p><strong>Técnica: Diseño Digital</strong></p>
+                    </figcaption>
+
+                </figure>
+                    
+                <figure>
+                    <img src="imagenes/fotografia.jpeg"
+                    alt="Fotografía">
+                    
+                    <figcaption>
+                        <h3>Fotografía</h3>
+                        <p>
+                            Creación de contenido mediante imagenes
+                            y recursos audiovisuales.
+                        </p>
+                        <p><strong>Técnica: Fotografía</strong></p>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <section id="audio-video">
+            <h2>Mi multimedia</h2>
+
+            <p>
+                Me gusta encontrar inspiración en la música y en 
+                todo lo que puedo transmitir a través de imágenes 
+                y videos.
+            </p>
+
+            <h3>Música que me inspira</h3>
+
+            <p>
+                Para editar videos me insipiro con musica, esta es
+                una de las principales canciones que escucho.
+            </p>
+
+            <audio controls>
+                <source src="audio/cancion.mp3"
+                type="audio/mpeg">
+                Tu navegador no puede reproducir este audio.
+            </audio>
+
+            <h3>Contenido Audiovisual</h3>
+
+            <p>
+                Presento uno de mis trabajos realizados basándose en lo que es la edición de video.
+            </p>
+
+            <video controls>
+                <source src=""
+                type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
+        </section>
+
+        <section id="formulario">
+
+            <h2>Contáctame</h2>
+
+            <p>
+                ¿Tienes alguna idea o proyecto?
+                Completa el formulario.
+            </p>
+
+            <form>
+
+                <label for="nombre">Nombre:</label>
+
+                <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre Apellido"
+                required>
+
+                <label for="correo">Correo electrónico:</label>
+
+                <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@tucorreo.com"
+                required>
+
+                <label for="tipo">Tipo de Proyecto:</label>
+
+                <select id="tipo" name="tipo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="diseno">Diseño Grádico</option>
+                    <option value="fotografía">Fotografía</option>
+                    <option value="video">Producción Audiovisual</option>
+                    <option value="edicion">Edición de video</option>
+                    <option value="branding">Branding</option>
+                    <option value="">Otro</option>
+                </select>
+
+                <fieldset>
+
+                    <legend>Modalidad de colaboración:</legend>
+
+                    <label>
+                        <input type="radio"
+                            id="presencial"
+                            name="modalidad"
+                            value="presencial"
+                            required>
+                        Presencial
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                            id="virtual"
+                            name="modalidad"
+                            value="virtual">
+                        Virtual
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                            id="ambas"
+                            name="modalidad"
+                            value="ambas">
+                        Ambas
+                    </label>
+
+                </fieldset>
+
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea id="mensaje"
+                    name="mensaje"
+                    placeholder="Escriba aquí su mensaje"
+                    rows="3"
+                    required></textarea>
+
+                <button type="submit">
+                    Enviar Formulario
+                </button>
+
+                <p class="aviso-formulario">
+                    Este formulario es únicamente demostrativo.
+                    Utiliza datos ficticios. La información
+                    ingresada no se guarda ni se envía a ningún lugar.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <section class="regresarMain">
+        <a href="../../index.html">
+            Volver a la página principal del grupo
+        </a>
+
+    </section>
+    
+    <footer>
+        <h3>Allison Chillogallo</h3>
+
+        <p>Estudiante de Diseño Multimedia</p>
+
+        <p>Diseño, creatividad y comunicación visual.</p>
+
+    </footer>
+
+</body>
+</html>
