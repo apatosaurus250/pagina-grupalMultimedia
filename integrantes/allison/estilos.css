@@ -244,6 +244,84 @@ footer p {
     margin: 8px 0;
 }
 
+/* ===== LABORATORIO GENERATIVO ===== */
+
+#laboratorio {
+    text-align: center;
+    padding: 30px 25px;
+}
+
+#laboratorio h3 {
+    color: #B9A0D9;
+}
+
+#laboratorio p {
+    color: #C8B9C5;
+}
+
+.canvas-contenedor {
+    width: 100%;
+    margin: 25px auto;
+    overflow: hidden;
+    border: 2px solid #D98CA3;
+    border-radius: 14px;
+    background-color: #17121A;
+}
+
+#miCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.panel-creativo {
+    background-color: #211A24;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #594451;
+}
+
+.panel-creativo h3 {
+    color: #D98CA3;
+}
+
+.botones-paleta,
+.botones-generador {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.panel-creativo button {
+    background-color: #D98CA3;
+    color: #211A24;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.panel-creativo button:hover {
+    background-color: #B9A0D9;
+    transform: translateY(-2px);
+}
+
+#paleta2 {
+    background-color: #B9A0D9;
+}
+
+.instrucciones-canvas {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
 @media (max-width: 600px) {
 
     header {
@@ -269,5 +347,18 @@ footer p {
     figure {
         min-width: auto;
     }
+
+        #laboratorio {
+        padding: 18px;
+    }
+
+    .panel-creativo button {
+        width: 100%;
+    }
+
+    .canvas-contenedor {
+        margin: 15px auto;
+    }
+
 
 }
