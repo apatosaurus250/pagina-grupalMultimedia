@@ -14,27 +14,47 @@
 <body>
 
     <header>
+        
         <nav>
-            <h1>CONTROL Z</h1>
-            <a href="#equipo">Nuestro equipo</a>
+            <h1>CONTROL Z<span class="punto">.</span></h1>
+            <div class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#equipo">Nuestro equipo</a>
+            </div>
         </nav>
 
-        <div class="portada">
-            <p class="subtitulo">DISEÑO MULTIMEDIA</p>
 
-            <h1>Tu imaginación, nuestra creación</h1>
+        
+    <div class="portada" id="inicio">
 
-            <p>
-                Somos un equipo multidisciplinario especializado en programación,
-                producción audiovisual, animación 3D e ilustración, que combina creatividad,
-                innovación y tecnología para desarrollar experiencias digitales y contenidos
-                visuales de alto impacto.
-            </p>
+        <p class="subtitulo">ESTUDIO CREATIVO DIGITAL · 2026</p>
 
-            <a href="#equipo" class="boton">
-                Conoce nuestro equipo
-            </a>
+        <h1>Tu imaginación,<br>
+            <span class="texto-degradado">nuestra creación.</span>
+        </h1>
+
+        <p>
+            Somos un equipo multidisciplinario especializado en programación,
+            producción audiovisual, animación 3D e ilustración, que combina creatividad,
+            innovación y tecnología para desarrollar experiencias digitales y contenidos
+            visuales de alto impacto.
+        </p>
+
+        <a href="#equipo" class="boton">
+            Conoce nuestro equipo →
+        </a>
+
+        <div class="elemento-3d">
+            <div class="esfera"></div>
         </div>
+
+        <p class="texto-portada-inferior">
+            DESIGN · TECHNOLOGY · CREATIVITY
+        </p>
+
+    </div>
+
     </header>
 
 
@@ -157,6 +177,88 @@
 
         </section>
 
+
+     <!-- PROYECTOS DESTACADOS -->
+
+        <section class="proyectos" id="proyectos">
+
+            <p class="etiqueta">NUESTRO TRABAJO</p>
+
+            <h2>Ideas convertidas en experiencias</h2>
+
+            <p class="descripcion">
+                Exploramos diferentes disciplinas para transformar conceptos
+                en propuestas visuales y digitales.
+            </p>
+
+            <div class="galeria">
+
+                <article class="proyecto-card">
+
+                    <div class="proyecto-visual visual-1">
+                        <span>01</span>
+                        <div class="figura-proyecto"></div>
+                    </div>
+
+                    <div class="proyecto-info">
+                        <p>DISEÑO GRÁFICO</p>
+                        <h3>Comunicación visual</h3>
+                        <span>Identidad · Composición · Creatividad</span>
+                    </div>
+
+                </article>
+
+
+                <article class="proyecto-card">
+
+                    <div class="proyecto-visual visual-2">
+                        <span>02</span>
+                        <div class="figura-proyecto"></div>
+                    </div>
+
+                    <div class="proyecto-info">
+                        <p>ANIMACIÓN 3D</p>
+                        <h3>Universos digitales</h3>
+                        <span>Modelado · Movimiento · Renderizado</span>
+                    </div>
+
+                </article>
+
+
+                <article class="proyecto-card">
+
+                    <div class="proyecto-visual visual-3">
+                        <span>03</span>
+                        <div class="figura-proyecto"></div>
+                    </div>
+
+                    <div class="proyecto-info">
+                        <p>PRODUCCIÓN AUDIOVISUAL</p>
+                        <h3>Historias en movimiento</h3>
+                        <span>Video · Edición · Narrativa</span>
+                    </div>
+
+                </article>
+
+
+                <article class="proyecto-card">
+
+                    <div class="proyecto-visual visual-4">
+                        <span>04</span>
+                        <div class="figura-proyecto"></div>
+                    </div>
+
+                    <div class="proyecto-info">
+                        <p>PROGRAMACIÓN</p>
+                        <h3>Experiencias interactivas</h3>
+                        <span>Web · Código · Interactividad</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
 
         <!-- SECCIÓN DEL EQUIPO -->
 
@@ -316,6 +418,7 @@
 
 
     <script src="carrusel.js"></script>
+    <script src="animaciones.js"></script>
 
 </body>
 </html>
