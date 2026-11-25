@@ -1,3 +1,8 @@
+
+/* =========================================
+   01. CONFIGURACION GENERAL
+========================================= */
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +16,8 @@ body {
     background-color: #080D19;
     background-image:
         radial-gradient(ellipse at 10% 10%, rgba(0,217,255,0.07), transparent 35%),
-        radial-gradient(ellipse at 90% 45%, rgba(123,44,255,0.08), transparent 35%);
+        radial-gradient(ellipse at 90% 45%, rgba(123,44,255,0.08), transparent 35%),
+        radial-gradient(ellipse at 50% 90%, rgba(35,75,49,0.07), transparent 40%);
     color: #E8EDF5;
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.7;
@@ -53,7 +59,7 @@ body::after {
 
 
 /* =========================================
-   03. ENCABEZADO Y NAVEGACIÓN
+   03. ENCABEZADO Y NAVEGACION
 ========================================= */
 
 header {
@@ -101,7 +107,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00D9FF;
+    color: #D98CA3;
 }
 
 
@@ -118,8 +124,6 @@ nav a:hover {
     margin: auto;
     overflow: hidden;
 }
-
-/* Luz decorativa */
 
 .portada::before {
     content: "";
@@ -162,7 +166,14 @@ nav a:hover {
 }
 
 .texto-degradado {
-    background: linear-gradient(90deg, #00D9FF, #A78BFA);
+    background: linear-gradient(
+        90deg,
+        #00D9FF,
+        #A78BFA,
+        #D98CA3,
+        #F5D547,
+        #438B58
+    );
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -190,7 +201,8 @@ nav a:hover {
 
 .boton:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,217,255,0.3);
+    background: linear-gradient(135deg, #D98CA3, #A78BFA);
+    box-shadow: 0 10px 30px rgba(217,140,163,0.25);
 }
 
 .texto-portada-inferior {
@@ -234,6 +246,7 @@ nav a:hover {
         transform: translateY(0) rotate(0deg);
         border-radius: 35% 65% 60% 40%;
     }
+
     50% {
         transform: translateY(-15px) rotate(25deg);
         border-radius: 60% 40% 35% 65%;
@@ -267,9 +280,16 @@ section h2 {
 section h2::after {
     content: "";
     display: block;
-    width: 55px;
+    width: 75px;
     height: 3px;
-    background: linear-gradient(90deg, #00D9FF, #A78BFA);
+    background: linear-gradient(
+        90deg,
+        #00D9FF,
+        #A78BFA,
+        #D98CA3,
+        #F5D547,
+        #438B58
+    );
     margin: 15px auto;
     border-radius: 5px;
 }
@@ -354,12 +374,12 @@ section h2::after {
         opacity: 0;
         transform: translateY(12px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 
 /* Indicadores */
 
@@ -391,7 +411,6 @@ section h2::after {
     background-color: #A78BFA;
 }
 
-
 /* Flechas */
 
 .prev,
@@ -415,13 +434,13 @@ section h2::after {
 
 .prev:hover,
 .next:hover {
-    color: #A78BFA;
+    color: #D98CA3;
     transform: scale(1.2);
 }
 
 
 /* =========================================
-   08. GALERÍA DE PROYECTOS
+   08. GALERIA DE PROYECTOS
 ========================================= */
 
 .proyectos {
@@ -447,27 +466,39 @@ section h2::after {
 
 .proyecto-card:hover {
     transform: translateY(-7px);
-    border-color: #00D9FF;
-    box-shadow: 0 15px 35px rgba(0,217,255,0.1);
+    border-color: #A78BFA;
+    box-shadow: 0 15px 35px rgba(167,139,250,0.12);
 }
 
 .proyecto-visual {
     position: relative;
-    height: 230px;
+    height: 250px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #141F36;
+    border-bottom: 1px solid #273754;
+}
+
+.proyecto-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.proyecto-card:hover .proyecto-visual img {
+    transform: scale(1.07);
 }
 
 .proyecto-visual > span {
     position: absolute;
-    top: 18px;
-    left: 20px;
-    color: rgba(255,255,255,0.8);
-    font-size: 12px;
-    letter-spacing: 2px;
+    top: 15px;
+    left: 18px;
     z-index: 2;
+    background: rgba(8,13,25,0.8);
+    color: #00D9FF;
+    padding: 5px 12px;
+    border-radius: 5px;
 }
 
 /* Fondos abstractos */
@@ -486,13 +517,13 @@ section h2::after {
 
 .visual-3 {
     background:
-        radial-gradient(circle at 40% 50%, #00B8D9, transparent 30%),
-        linear-gradient(135deg, #10233C, #202D55);
+        radial-gradient(circle at 40% 50%, #D98CA3, transparent 30%),
+        linear-gradient(135deg, #302532, #442D50);
 }
 
 .visual-4 {
     background:
-        radial-gradient(circle at 60% 35%, #7654D6, transparent 30%),
+        radial-gradient(circle at 60% 35%, #438B58, transparent 30%),
         linear-gradient(135deg, #111A39, #174A62);
 }
 
@@ -519,12 +550,12 @@ section h2::after {
 .visual-3 .figura-proyecto {
     border-radius: 10px;
     transform: rotate(45deg) scale(0.85);
-    background: linear-gradient(135deg, #00D9FF, #164A7A);
+    background: linear-gradient(135deg, #D98CA3, #493343);
 }
 
 .visual-4 .figura-proyecto {
     border-radius: 50% 10% 50% 10%;
-    background: linear-gradient(135deg, #00D9FF, #7654D6);
+    background: linear-gradient(135deg, #438B58, #164A2A);
 }
 
 .proyecto-card:hover .figura-proyecto {
@@ -554,8 +585,11 @@ section h2::after {
 }
 
 
+
 /* =========================================
    09. EQUIPO
+   ORDEN: DIEGO, ALLISON,
+   GABRIELA Y STEVEN
 ========================================= */
 
 .tarjetas {
@@ -577,8 +611,6 @@ section h2::after {
 
 .tarjeta:hover {
     transform: translateY(-9px);
-    border-color: #00D9FF;
-    box-shadow: 0 15px 35px rgba(0,217,255,0.12);
 }
 
 .foto {
@@ -586,13 +618,10 @@ section h2::after {
     height: 115px;
     margin: auto;
     border-radius: 50%;
-    background: linear-gradient(135deg, #00B8D9, #7654D6);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 3px solid rgba(0,217,255,0.4);
-    box-shadow: 0 0 20px rgba(0,217,255,0.15);
 }
 
 .foto img {
@@ -603,7 +632,6 @@ section h2::after {
 }
 
 .tarjeta h3 {
-    color: #00D9FF;
     margin-top: 20px;
     font-size: 18px;
 }
@@ -616,9 +644,6 @@ section h2::after {
 
 .tarjeta a {
     display: inline-block;
-    background: rgba(0,217,255,0.1);
-    color: #00D9FF;
-    border: 1px solid rgba(0,217,255,0.4);
     padding: 10px 20px;
     border-radius: 7px;
     text-decoration: none;
@@ -627,10 +652,98 @@ section h2::after {
     transition: 0.3s;
 }
 
-.tarjeta a:hover {
-    background: #00D9FF;
+/* DIEGO - CIAN Y VIOLETA */
+
+.tarjeta:nth-child(1) {
+    border-top: 3px solid #00D9FF;
+}
+
+.tarjeta:nth-child(1) .foto {
+    border: 3px solid #00D9FF;
+    box-shadow: 0 0 20px rgba(0,217,255,0.2);
+}
+
+.tarjeta:nth-child(1) h3 {
+    color: #00D9FF;
+}
+
+.tarjeta:nth-child(1) a {
+    background: linear-gradient(100deg, #00D9FF, #8065E8);
     color: #080D19;
 }
+
+/* ALLISON - ROSA Y LAVANDA */
+
+.tarjeta:nth-child(2) {
+    border-top: 3px solid #D98CA3;
+}
+
+.tarjeta:nth-child(2) .foto {
+    border: 3px solid #D98CA3;
+    box-shadow: 0 0 20px rgba(217,140,163,0.2);
+}
+
+.tarjeta:nth-child(2) h3 {
+    color: #D98CA3;
+}
+
+.tarjeta:nth-child(2) a {
+    background: #D98CA3;
+    color: #211A24;
+}
+
+/* GABRIELA - MORADO Y AMARILLO */
+
+.tarjeta:nth-child(3) {
+    border-top: 3px solid #A78BFA;
+}
+
+.tarjeta:nth-child(3) .foto {
+    border: 3px solid #A78BFA;
+    box-shadow: 0 0 20px rgba(167,139,250,0.2);
+}
+
+.tarjeta:nth-child(3) h3 {
+    color: #A78BFA;
+}
+
+.tarjeta:nth-child(3) a {
+    background: #F5D547;
+    color: #241C3B;
+}
+
+/* STEVEN - VERDE */
+
+.tarjeta:nth-child(4) {
+    border-top: 3px solid #438B58;
+}
+
+.tarjeta:nth-child(4) .foto {
+    border: 3px solid #438B58;
+    box-shadow: 0 0 20px rgba(67,139,88,0.2);
+}
+
+.tarjeta:nth-child(4) h3 {
+    color: #72B982;
+}
+
+.tarjeta:nth-child(4) a {
+    background: #234B31;
+    color: #F2F5F2;
+    border: 1px solid #438B58;
+}
+
+/* EFECTOS GENERALES */
+
+.tarjeta:hover {
+    border-color: #A78BFA;
+}
+
+.tarjeta a:hover {
+    filter: brightness(1.15);
+    transform: translateY(-3px);
+}
+
 
 
 /* =========================================
@@ -682,8 +795,18 @@ section h2::after {
     box-shadow: 0 0 0 3px rgba(0,217,255,0.1);
 }
 
+.recomendaciones input::placeholder,
+.recomendaciones textarea::placeholder {
+    color: #8290A8;
+}
+
 .recomendaciones button {
-    background: linear-gradient(135deg, #00D9FF, #7B61FF);
+    background: linear-gradient(
+        135deg,
+        #00D9FF,
+        #A78BFA,
+        #D98CA3
+    );
     color: #080D19;
     padding: 13px 25px;
     border: none;
@@ -729,7 +852,7 @@ section h2::after {
 
 
 /* =========================================
-   12. PIE DE PÁGINA
+   12. PIE DE PAGINA
 ========================================= */
 
 footer {
@@ -767,40 +890,6 @@ footer > p {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-
-/* IMÁGENES DE LOS PROYECTOS */
-
-.proyecto-visual {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-    background-color: #141F36;
-    border-bottom: 1px solid #273754;
-}
-
-.proyecto-visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: 0.5s;
-}
-
-.proyecto-card:hover .proyecto-visual img {
-    transform: scale(1.07);
-}
-
-.proyecto-visual > span {
-    position: absolute;
-    top: 15px;
-    left: 18px;
-    z-index: 2;
-    background: rgba(8, 13, 25, 0.8);
-    color: #00D9FF;
-    padding: 5px 12px;
-    border-radius: 5px;
 }
 
 
@@ -916,9 +1005,14 @@ footer > p {
         padding: 25px 18px;
     }
 
+    .footer-contenido {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
